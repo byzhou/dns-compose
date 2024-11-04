@@ -38,3 +38,9 @@ go to settings and go to optional protocals, enable dns-over-https
 enable cloudflare dns over https in "proxy & forwarders" under settings
 
 # generate the certificate and add them inside the dns server
+
+# upgrade
+
+docker compose down
+docker pull technitium/dns-server:latest
+docker compose up -d
